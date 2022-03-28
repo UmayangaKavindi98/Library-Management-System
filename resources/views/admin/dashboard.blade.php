@@ -31,6 +31,7 @@
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
     <div class="wrapper">
+        {{-- include header  --}}
         @include('admin/header')
 
         {{-- page top content --}}
@@ -116,55 +117,115 @@
                                 <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                             </div><!--small-box bg-info-->
                         </div>
+                    </div> <!--1st row-->
 
-                        <section class="col-lg-5 connectedSortable">
-                            <!-- Calendar -->
-                            <div class="card bg-gradient-success">
-                                <div class="card-header border-0">
+                    <!-- 2 nd row -->
+                    <div class="row">
+                        <!-- Left col -->
+                        <section class="col-lg-7 connectedSortable">
+                            
+                            <!-- TABLE: book borrow request -->
+                            <div class="card">
+                                <div class="card-header border-transparent">
+                                <h3 class="card-title">Book borrow requests</h3>
                 
-                                <h3 class="card-title">
-                                    <i class="far fa-calendar-alt"></i>
-                                    Calendar
-                                </h3>
-                                <!-- tools card -->
                                 <div class="card-tools">
-                                    <!-- button with a dropdown -->
-                                    <div class="btn-group">
-                                    <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
-                                        <i class="fas fa-bars"></i>
-                                    </button>
-                                    <div class="dropdown-menu" role="menu">
-                                        <a href="#" class="dropdown-item">Add new event</a>
-                                        <a href="#" class="dropdown-item">Clear events</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a href="#" class="dropdown-item">View calendar</a>
-                                    </div>
-                                    </div>
-                                    <button type="button" class="btn btn-success btn-sm" data-card-widget="collapse">
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse">
                                     <i class="fas fa-minus"></i>
                                     </button>
-                                    <button type="button" class="btn btn-success btn-sm" data-card-widget="remove">
+                                    <button type="button" class="btn btn-tool" data-card-widget="remove">
                                     <i class="fas fa-times"></i>
                                     </button>
                                 </div>
-                                <!-- /. tools -->
                                 </div>
                                 <!-- /.card-header -->
-                                <div class="card-body pt-0">
-                                    <!--The calendar -->
-                                    <div id="calendar" style="width: 100%">
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table m-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>Student ID</th>
+                                                    <th>Book ID</th>
+                                                    <th>Book Name</th>
+                                                    <th>Option</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="#">ST ID here</a></td>
+                                                    <td>Book ID here</td>
+                                                    <td>Book name here</td>
+                                                    <td>
+                                                        <button class="btn btn-success">Confirm</button>
+                                                        <button class="btn btn-danger">Disline</button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
+                                    <!-- /.table-responsive -->
                                 </div>
                                 <!-- /.card-body -->
+                                <div class="card-footer clearfix">
+                                    <a href="javascript:void(0)" class="btn btn-sm btn-secondary float-right">View All Requests</a>
+                                </div>
+                                <!-- /.card-footer -->
                             </div>
-                        </section>
 
-                    </div>
+                        </section><!-- Left col end-->
+                        <!-- right col -->
+                        <section class="col-lg-5 connectedSortable">
+                            
+                            <!-- Calendar -->
+                            <div class="card bg-gradient-success">
+                            <div class="card-header border-0">
+
+                                <h3 class="card-title">
+                                <i class="far fa-calendar-alt"></i>
+                                Calendar
+                                </h3>
+                                <!-- tools card -->
+                                <div class="card-tools">
+                                <!-- button with a dropdown -->
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown" data-offset="-52">
+                                    <i class="fas fa-bars"></i>
+                                    </button>
+                                    <div class="dropdown-menu" role="menu">
+                                    <a href="#" class="dropdown-item">Add new event</a>
+                                    <a href="#" class="dropdown-item">Clear events</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a href="#" class="dropdown-item">View calendar</a>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn btn-success btn-sm" data-card-widget="collapse">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+                                <button type="button" class="btn btn-success btn-sm" data-card-widget="remove">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                </div>
+                                <!-- /. tools -->
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body pt-0">
+                                <!--The calendar -->
+                                <div id="calendar" style="width: 100%"></div>
+                            </div>
+                            <!-- /.card-body -->
+                            </div>
+                            <!-- calender end -->
+
+                        </section><!-- right col end-->
+                    </div><!-- end 2 nd row -->
+
                 </div><!--container-fluid-->
-            </section>
+            </section><!--Main body content-->
+
 
         </div><!--content-wrapper-->
 
+        {{-- include footer  --}}
         @include('admin/footer')
     </div><!--wrapper-->
 
@@ -206,9 +267,7 @@
     <script src="plugins/summernote/summernote-bs4.min.js"></script>
 
     <!-- jQuery UI 1.11.4 -->
-    <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-
-
+    <script src="plugins/jquery-ui/jquery-ui.min.js"></script
 
 </body>
 </html>
