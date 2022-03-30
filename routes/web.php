@@ -25,3 +25,8 @@ Route::get('/', function () {
 
 Route::view('/admin','admin/dashboard');
 Route::view('/test','admin/test');
+Route::view('/listed-Books','admin/pages/listedBook');
+Route::view('/damaged-Books','admin/pages/damagedBooks');
+Route::view('/issued-Books','admin/pages/issuedBooks');
+Route::view('/borrow-req-Books','admin/pages/borrowReq');
+
