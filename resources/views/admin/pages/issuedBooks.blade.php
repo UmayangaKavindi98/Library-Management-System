@@ -212,31 +212,40 @@
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Rendering engine</th>
-                                            <th>Browser</th>
-                                            <th>Platform(s)</th>
-                                            <th>Engine version</th>
-                                            <th>CSS grade</th>
+                                            <th>Student Id</th>
+                                            <th>Student Name</th>
+                                            <th>Book ID</th>
+                                            <th>Book Name</th>
+                                            <th>Borrowed Date</th>
+                                            <th>Return Date</th>
+                                            <th>Option</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                            Explorer 4.0
+                                            <td>St001</td>
+                                            <td>Student name</td>
+                                            <td>Book1</td>
+                                            <td>Book Name</td>
+                                            <td>12/03/2022</td>
+                                            <td>26/03/2022</td>
+                                            <td>
+                                                <button class="btn btn-success">Return</button>
+                                                <button class="btn btn-warning">Extend return Date</button>
                                             </td>
-                                            <td>Win 95+</td>
-                                            <td> 4</td>
-                                            <td>X</td>
                                         </tr>
                                         <tr>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                            Explorer 4.0
+                                            <td>St004</td>
+                                            <td>Student name</td>
+                                            <td>Book6</td>
+                                            <td>book name</td>
+                                            <td>2/03/2022</td>
+                                            <td>16/03/2022</td>
+                                            <td>
+                                                <button class="btn btn-success">Return</button>
+                                                <button class="btn btn-warning">Extend return Date</button>
                                             </td>
-                                            <td>Win 95+</td>
-                                            <td> 7</td>
-                                            <td>X</td>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>

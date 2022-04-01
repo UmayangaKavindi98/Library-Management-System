@@ -224,22 +224,36 @@
                                             <td>Book1</td>
                                             <td>Sithum Pathum</td>
                                             <td>Mr. Kamal</td>
-                                            <td class="alert alert-danger">borrowed</td>
+                                            <td style="color: green">Available</td>
                                             <td>
-                                                <button class="btn btn-success">Issue</button>
-                                                <button class="btn btn-danger">Remove</button>
-                                                <button class="btn btn-warning">Add to Damage</button>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-warning">Option</button>
+                                                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                                                      <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                    <div class="dropdown-menu" role="menu">
+                                                      <a class="dropdown-item" href="#">Edit</a>
+                                                      <a class="dropdown-item" href="#">Remove</a>
+                                                      <a class="dropdown-item" href="#">Add to damage</a>
+                                                  </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Book2</td>
                                             <td>Sithum Pathum</td>
                                             <td>Mr. Kamal</td>
-                                            <td class="alert alert-danger">success</td>
+                                            <td style="color: red">Not Available</td>
                                             <td>
-                                                <button class="btn btn-success">Issue</button>
-                                                <button class="btn btn-danger">Remove</button>
-                                                <button class="btn btn-warning">Add to Damage</button>
+                                                <div class="btn-group">
+                                                    <button type="button" class="btn btn-warning">Option</button>
+                                                    <button type="button" class="btn btn-warning dropdown-toggle dropdown-icon" data-toggle="dropdown">
+                                                      <span class="sr-only">Toggle Dropdown</span>
+                                                    </button>
+                                                    <div class="dropdown-menu" role="menu">
+                                                      <a class="dropdown-item" href="#">Edit</a>
+                                                      <a class="dropdown-item" href="#">Remove</a>
+                                                      <a class="dropdown-item" href="#">Add to damage</a>
+                                                  </div>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -289,10 +303,10 @@
     <script src="../../plugins/datatables-buttons/js/buttons.print.min.js"></script>
     <script src="../../plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
     
-    <!-- AdminLTE App -->
+    <!-- Uva App -->
     <script src="dist/js/adminlte.js"></script>
 
-    <!-- Page specific script -->
+    <!-- Table control script -->
     <script>
     $(function () {
         $("#example1").DataTable({

@@ -212,31 +212,33 @@
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Rendering engine</th>
-                                            <th>Browser</th>
-                                            <th>Platform(s)</th>
-                                            <th>Engine version</th>
-                                            <th>CSS grade</th>
+                                            <th>Student Id</th>
+                                            <th>Student Name</th>
+                                            <th>Book ID</th>
+                                            <th>Book Name</th>
+                                            <th>Option</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                            Explorer 4.0
+                                            <td><a href="#">ST ID here</a></td>
+                                            <td>Student name here</td>
+                                            <td>Book ID here</td>
+                                            <td>Book name here</td>
+                                            <td>
+                                                <button class="btn btn-success">Confirm</button>
+                                                <button class="btn btn-danger">Disline</button>
                                             </td>
-                                            <td>Win 95+</td>
-                                            <td> 4</td>
-                                            <td>X</td>
                                         </tr>
                                         <tr>
-                                            <td>Trident</td>
-                                            <td>Internet
-                                            Explorer 4.0
+                                            <td><a href="#">ST ID here</a></td>
+                                            <td>Student name here</td>
+                                            <td>Book ID here</td>
+                                            <td>Book name here</td>
+                                            <td>
+                                                <button class="btn btn-success">Confirm</button>
+                                                <button class="btn btn-danger">Disline</button>
                                             </td>
-                                            <td>Win 95+</td>
-                                            <td> 7</td>
-                                            <td>X</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -292,7 +294,7 @@
     <script>
     $(function () {
         $("#example1").DataTable({
-        "responsive": true, "lengthChange": false, "autoWidth": false,
+        "responsive": true, "lengthChange": false, "autoWidth": true,
         "buttons": ["copy", "excel", "pdf", "print"]
         }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     });

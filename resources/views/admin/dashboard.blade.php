@@ -66,7 +66,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="/Stu-reg" class="nav-link">
                                 <i class="nav-icon fas fa-user"></i>
                                 <p>
                                     Reg. Student
@@ -298,7 +298,7 @@
                                 <!-- /.card-header -->
                                 <div class="card-body p-0">
                                     <div class="table-responsive">
-                                        <table class="table m-0">
+                                        <table id="example1" class="table m-0 table-striped">
                                             <thead>
                                                 <tr>
                                                     <th>Student ID</th>
@@ -420,5 +420,14 @@
     <!-- jQuery UI 1.11.4 -->
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
 
+    <!-- Table control script -->
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+            "responsive": true, "lengthChange": false, "autoWidth": false,
+            "buttons": ["copy", "excel", "pdf", "print"]
+            }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+        });
+    </script>
 </body>
 </html>
