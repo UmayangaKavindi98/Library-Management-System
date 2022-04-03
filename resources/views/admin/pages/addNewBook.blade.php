@@ -57,7 +57,7 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="/admin" class="nav-link">
                                 <i class="nav-icon fas fa-tachometer-alt"></i>
                                 <p>
                                     Dashboard
@@ -85,7 +85,7 @@
                             </a>
                             <ul class="nav nav-treeview ">
                             <li class="nav-item">
-                                <a href="#" class="nav-link active">
+                                <a href="/addBook" class="nav-link active">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Add Books</p>
                                 </a>
@@ -216,31 +216,33 @@
                         <div class="col-md-6">
 
                             <!--form-->
-                            <div class="card card-primary">
+                            <div class="card card-success">
                                 <div class="card-header">
                                   <h3 class="card-title">Add Book</h3>
                                 </div>
                                 <form>
+                                    @csrf
                                   <div class="card-body">
                                     <p>Last Registered Book ID: </p>
                                     <div class="form-group">
                                       <label for="bookId">Book ID</label>
-                                      <input type="text" class="form-control" id="bookId" placeholder="Enter book Id">
+                                      <input type="text" class="form-control" id="bookId" placeholder="Enter book Id" required>
+                                      <button class="btn mt-2" style="background-color: gold">Generate Qr</button>
                                     </div>
                                     <div class="form-group">
                                         <label for="bookName">Book Name</label>
-                                        <input type="text" class="form-control" id="bookName" placeholder="Enter book Name">
+                                        <input type="text" class="form-control" id="bookName" placeholder="Enter book Name" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="authorId">Author ID</label>
-                                        <input type="text" class="form-control" id="authorId" placeholder="Enter author ID">
+                                        <input type="text" class="form-control" id="authorId" placeholder="Enter author ID" required>
                                     </div>
                                     
                                     <div class="form-group">
                                       <label for="exampleInputFile">Book Image</label>
                                       <div class="input-group">
                                         <div class="custom-file">
-                                          <input type="file" class="custom-file-input" id="formFile">
+                                          <input type="file" class="custom-file-input" id="formFile" required>
                                           <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                                         </div>
                                         <div class="input-group-append">
@@ -250,11 +252,11 @@
                                     </div>
                                     <div class="form-check">
                                       <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                      <label class="form-check-label" for="exampleCheck1">Complete</label>
                                     </div>
                                   </div>
                                   <div class="card-footer">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-success">Submit</button>
                                   </div>
                                 </form>
                             </div>
