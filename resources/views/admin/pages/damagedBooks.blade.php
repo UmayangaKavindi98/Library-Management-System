@@ -21,7 +21,7 @@
         {{-- include header  --}}
         @include('admin/header')
         <!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-dark-primary elevation-4">
+        <aside class="main-sidebar sidebar-dark-success elevation-4" style=" background-image: linear-gradient(rgb(36, 36, 36), rgb(4, 0, 224));">
             <!-- School Logo -->
             <a href="#" class="brand-link">
                 <img src="dist/img/schoolLogo.png" alt="School Logo" height="50px">
@@ -31,7 +31,7 @@
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel-->
-                <div class="user-panel mt-2 pb-3 mb-3 d-flex">
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
                         <img src="dist/img/avatar2.png" class="img-circle elevation-2" alt="User Image">
                     </div>

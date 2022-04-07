@@ -41,7 +41,7 @@
             <!-- Sidebar -->
             <div class="sidebar">
                 <!-- Sidebar user panel-->
-                <div class="user-panel mt-5 pb-3 mb-3 d-flex">
+                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
                         <img src="dist/img/avatar2.png" class="img-circle elevation-2" alt="User Image">
                     </div>
@@ -51,7 +51,7 @@
                 </div>
 
                 <!-- Sidebar Menu -->
-                <nav class="mt-2">
+                <nav>
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                         <li class="nav-item">
                             <a href="/admin" class="nav-link active">
@@ -463,7 +463,7 @@
                                             <td>{{ $item->Thursday }}</td>
                                             <td>{{ $item->Friday }}</td>
                                             <td>
-                                                <a href="" class="btn btn-primary btn-sm">Edit</a>
+                                                <a href="" class="btn btn-sm pl-3 pr-3" style="background-color:ivory;">Edit</a>
                                             </td>
                                         </tr>
                                         @endforeach
