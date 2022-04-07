@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\addMemberController;
 use App\Http\Controllers\fileUploadController;
+use App\Http\Controllers\timeTableController;
 use App\Http\Controllers\userController;
 use App\Http\Controllers\userListController;
 use App\Http\Controllers\UserOperation;
@@ -23,7 +24,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/admin','admin/dashboard');
+Route::get('/admin', [timeTableController::class, 'index']);
 Route::view('/test','admin/test');
 Route::view('/listed-Books','admin/pages/listedBook');
 Route::view('/damaged-Books','admin/pages/damagedBooks');

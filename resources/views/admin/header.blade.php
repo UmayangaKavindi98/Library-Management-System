@@ -4,7 +4,7 @@
 </div>
 
 <!-- Navbar -->
-<nav class="main-header navbar navbar-expand navbar-dark">
+<nav class="main-header navbar navbar-expand navbar-dark" style=" background-image: linear-gradient(rgb(36, 36, 36), rgb(4, 1, 168));">
 
     <!-- top navbar left side links -->
     <ul class="navbar-nav">

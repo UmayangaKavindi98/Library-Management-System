@@ -220,29 +220,29 @@
                                 <div class="card-header">
                                   <h3 class="card-title">Add Book</h3>
                                 </div>
-                                <form>
+                                <form method="POST" action="">
                                     @csrf
                                   <div class="card-body">
                                     <p>Last Registered Book ID: </p>
                                     <div class="form-group">
                                       <label for="bookId">Book ID</label>
-                                      <input type="text" class="form-control" id="bookId" placeholder="Enter book Id" required>
-                                      <button class="btn mt-2" style="background-color: gold">Generate Qr</button>
+                                      <input type="text" name="bookid" class="form-control" id="bookId" placeholder="Enter book Id" required>
+                                      <a href="javascript:void(0)" class="btn mt-2" style="background-color: gold" onclick="generate();"><i class="fa-solid fa-qrcode"></i> Generate</a>
                                     </div>
                                     <div class="form-group">
                                         <label for="bookName">Book Name</label>
-                                        <input type="text" class="form-control" id="bookName" placeholder="Enter book Name" required>
+                                        <input type="text" name="bookName" class="form-control" id="bookName" placeholder="Enter book Name" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="authorId">Author ID</label>
-                                        <input type="text" class="form-control" id="authorId" placeholder="Enter author ID" required>
+                                        <input type="text" name="authorid" class="form-control" id="authorId" placeholder="Enter author ID" required>
                                     </div>
                                     
                                     <div class="form-group">
                                       <label for="exampleInputFile">Book Image</label>
                                       <div class="input-group">
                                         <div class="custom-file">
-                                          <input type="file" class="custom-file-input" id="formFile" required>
+                                          <input type="file" name="bookimg" class="custom-file-input" id="formFile" required>
                                           <label class="custom-file-label" for="exampleInputFile">Choose file</label>
                                         </div>
                                         <div class="input-group-append">
@@ -264,7 +264,12 @@
 
                         </div>
                         <div class="col-md-6">
-                            right column
+                            <div class="jumbotron mx-auto w-75 border my-4 py-4 text-center" id="dBtn">
+                                <div id="placeHolder"></div>
+                                <div id="myCanvas"></div>
+                                <br>
+                                <a href="#" class="btn btn-warning btn-lg" onclick="downloadQrCode(this);" download="qr.png">Download</a>
+                            </div>
                         </div>
                     </div><!--row-->
                 </div><!--container-fluid-->
@@ -279,6 +284,45 @@
     <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
     <script>
         $.widget.bridge('uibutton', $.ui.button)
+    </script>
+    
+
+    {{-- qr generate --}}
+    <script>
+        function generate(){
+            var typeNumber = 4;
+            var errorCorrectionLevel = 'L';
+            var qr = qrcode(typeNumber, errorCorrectionLevel);
+            var inputText = document.getElementById('bookId').value;
+            qr.addData(inputText);
+            qr.make();
+            document.getElementById('placeHolder').innerHTML = qr.createImgTag();
+
+            canvasScreen();
+            canvas.style.width = canvasWidth;
+            canvas.style.height = canvasHeight;
+        }
+
+        downloadQrCode = function (el){
+            var canvas = document.getElementById("myCanvas");
+            var image = canvas.toDataURL("image/png");
+            el.href = image;
+        };
+
+        function canvasScreen(){
+            var a=document.getElementsByTagName("img")[0];
+            a.setAttribute("id","qrcode");
+            
+            var canvas = document.getElementById("myCanvas");
+            
+
+            var ctx = canvas.getContext("2d");
+            var img = document.getElementById("qrcode");
+            ctx.drawImage(img,70,0,150,150);
+            
+            document.getElementById("dBtn").style.display="block";
+            
+        }
     </script>
 
 
@@ -309,6 +353,13 @@
 
     <!-- jQuery UI 1.11.4 -->
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!--ar code-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.1/qrcode.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
 
 </body>
 </html>
