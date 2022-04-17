@@ -35,7 +35,7 @@
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="topbar-info">
-                                        <a href="tel:+61-3-8376-6284"><i class="fa fa-phone"></i>055 - 123 4569</a>
+                                        <a href="#"><i class="fa fa-phone"></i>055 - 123 4569</a>
                                         <span>/</span>
                                         <a href="#"><i class="fa fa-envelope"></i>uvacollage@gmail.com</a>
                                     </div>
@@ -89,9 +89,11 @@
                                                 </ul>
                                             </li>
                                             <li class="dropdown">
-                                                <a data-toggle="dropdown" class="dropdown-toggle disabled" href="#">Pages</a>
+                                                <a data-toggle="dropdown" class="dropdown-toggle disabled" href="#">languages</a>
                                                 <ul class="dropdown-menu">
-                                                    <li><a href="#">page 1</a></li>
+                                                    <li><a href="#">Sinhala</a></li>
+                                                    <li><a href="#">Tamil</a></li>
+                                                    <li><a href="#">English</a></li>
                     
                                                 </ul>
                                             </li>
@@ -174,12 +176,11 @@
                 </figure>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h3>Online Learning Anytime, Anywhere!</h3>
-                        <h2>Discover Your Roots</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized words.</p>
+                        <h3>Online Library Anytime, Anywhere!</h3>
+                        <h2>This is your school library</h2>
+                        <p>Badulla Uva College, We give our student the opportunity to access the school library anytime, anywhere.</p>
                         <div class="slide-buttons hidden-sm hidden-xs">    
-                            <a href="#" class="btn btn-primary">Read More</a>
-                            <a href="#" class="btn btn-default">Purchase</a>
+                            <a href="#" class="btn btn-primary">More Details</a>
                         </div>
                     </div>
                 </div>
@@ -190,12 +191,11 @@
                 </figure>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h3>Online Learning Anytime, Anywhere!</h3>
-                        <h2>Discover Your Roots</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized words.</p>
+                        <h3>මාර්ගගත පුස්තකාලය ඕනෑම වේලාවක, ඕනෑම තැනක!</h3>
+                        <h2>මේ ඔබේ පාසල් පුස්තකාලයයි</h2>
+                        <p>බදුල්ල ඌව විද්‍යාලය, අපි අපගේ ශිෂ්‍යයාට ඕනෑම වේලාවක, ඕනෑම තැනක පාසල් පුස්තකාලයට ප්‍රවේශ වීමට අපි අවස්ථාව ලබා දෙන්නෙමු.</p>
                         <div class="slide-buttons hidden-sm hidden-xs">    
-                            <a href="#" class="btn btn-primary">Read More</a>
-                            <a href="#" class="btn btn-default">Purchase</a>
+                            <a href="#" class="btn btn-primary">වැඩිපුර විස්තර</a>
                         </div>
                     </div>
                 </div>
@@ -206,12 +206,11 @@
                 </figure>
                 <div class="container">
                     <div class="carousel-caption">
-                        <h3>Online Learning Anytime, Anywhere!</h3>
-                        <h2>Discover Your Roots</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized words.</p>
+                        <h3>ஆன்லைன் நூலகம் எந்த நேரத்திலும், எங்கும்!</h3>
+                        <h2>இது உங்கள் பள்ளி நூலகம்</h2>
+                        <p>பதுளை ஊவா கல்லூரி, எமது மாணவ மாணவியருக்கு எந்த நேரத்திலும், எந்த இடத்திலும் பாடசாலை நூலகத்தை அணுகுவதற்கான வாய்ப்பை வழங்குகிறோம்.</p>
                         <div class="slide-buttons hidden-sm hidden-xs">    
-                            <a href="#" class="btn btn-primary">Read More</a>
-                            <a href="#" class="btn btn-default">Purchase</a>
+                            <a href="#" class="btn btn-primary">கூடுதல் தகவல்கள்</a>
                         </div>
                     </div>
                 </div>
@@ -226,8 +225,566 @@
     </div>
     <!-- /Slider Section -->
 
+    <!-- Start Search Section -->
+    <section class="search-filters">
+        <div class="container">
+            <div class="filter-box">
+                <h3 style="margin-bottom: 0%;">What are you looking for at the library?</h3>
+                <h3 style="margin-bottom: 0%; font-size: 22pt;" >ඔබ පුස්තකාලයේ සොයන්නේ කුමක්ද?</h3>
+                <h3 style="font-size: 17pt;">நூலகத்தில் என்ன தேடுகிறீர்கள்?</h3>
+                <form action="#" method="get">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="form-group">
+                            <label class="sr-only" for="keywords">Search by Keyword</label>
+                            <input class="form-control" placeholder="Search by Keyword" id="keywords" name="keywords" type="text">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="form-group">
+                            <select name="catalog" id="catalog" class="form-control">
+                                <option value="" disabled="disabled">Search the Subject</option>
+                                <option value="Sinhala">Sinhala</option>
+                                <option value="Science">Science</option>
+                                <option value="Maths">Maths</option>
+                                <option value="Buddhism">Buddhism</option>
+                                <option value="History">History</option>
+                                <option value="English">English</option>
+                                <option value="Geography">Geography</option>
+                                <option value="Econ">Econ</option>
+                                <option value="Music">Music</option>
+                                <option value="Drama">Drama</option>
+                                <option value="Art">Art</option>
+                                <option value="ICT">ICT</option>
+                                <option value="Media">Media</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="form-group">
+                            <select name="category" id="category" class="form-control">
+                                <option value="" disabled="disabled">All Categories</option>
+                                <option value="">Category 01</option>
+                                <option value="">Category 02</option>
+                                <option value="">Category 03</option>
+                                <option value="">Category 04</option>
+                                <option value="">Category 05</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <div class="form-group">
+                            <input class="form-control" type="submit" value="Search">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- /Search Section -->
+    
+    <!-- Start Features -->
+    <section class="features">
+        <div class="container">
+            <ul>
+                <li class="light-green-hover">
+                    <div class="feature-box">
+                        <i class="yellow"></i>
+                        <h3>Books</h3>
+                        <p>You can choose your favorite books<br>ඔබට ඔබේ ප්‍රියතම පොත් තෝරා ගත හැකිය<br>புத்தகங்கள்</p>
+                        <a class="yellow" href="#">
+                            View Selection <i class="fa fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="yellow-hover">
+                    <div class="feature-box">
+                        <i class="light-green"></i>
+                        <h3>eBooks</h3>
+                        <p>You can read books online or download ebooks<br>ඔබට අන්තර්ජාලයෙන් පොත් කියවන්න පුළුවන්<br>மின்புத்தகங்கள்</p>
+                        <a class="light-green" href="#">
+                            View Selection <i class="fa fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="red-hover">
+                    <div class="feature-box">
+                        <i class="blue"></i>
+                        <h3>DVDs</h3>
+                        <p>You can place a order for educational DVDs<br>අධ්‍යාපනික DVD තැටි<br>கல்வி டிவிடிகள்</p>
+                        <a class="blue" href="#">
+                            View Selection <i class="fa fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="blue-hover">
+                    <div class="feature-box">
+                        <i class="red"></i>
+                        <h3>Magazines</h3>
+                        <p>You can read magazines<br>ඔබට සඟරා කියවිය හැකිය<br>நீங்கள் பத்திரிகைகளைப் படிக்கலாம்</p>
+                        <a class="red" href="#">
+                            View Selection <i class="fa fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="green-hover">
+                    <div class="feature-box">
+                        <i class="violet"></i>
+                        <h3>Musics</h3>
+                        <p>You can listen musics<br>ඔබට සංගීතයට සවන් දිය හැකිය<br>நீங்கள் இசையைக் கேட்கலாம்</p>
+                        <a class="violet" href="#">
+                            View Selection <i class="fa fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+                <li class="violet-hover">
+                    <div class="feature-box">
+                        <i class="green"></i>
+                        <h3>eAudio</h3>
+                        <p>You can download eaudios<br>ඔබට eaudios බාගත කළ හැකිය<br>நீங்கள் eaudios பதிவிறக்கம் செய்யலாம்</p>
+                        <a class="green" href="#">
+                            View Selection <i class="fa fa-long-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- End Features -->
 
+    <!-- Start: Category Filter -->
+    <section class="category-filter section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="center-content">
+                    <h2 class="section-title">New Releases | නව නිකුත්වූ | புதிய வெளியீடுகள்</h2>
+                    <span class="underline center"></span>
+                    <p class="lead"></p>
+                </div>
+                <div class="filter-buttons">
+                    <div class="filter btn" data-filter="all">All Releases</div>
+                    <div class="filter btn" data-filter=".adults">Adults</div>
+                    <div class="filter btn" data-filter=".kids-teens">Kids &amp; Teens</div>
+                    <div class="filter btn" data-filter=".video">Video</div>
+                    <div class="filter btn" data-filter=".audio">Audio</div>
+                    <div class="filter btn" data-filter=".books">Books</div>
+                    <div class="filter btn" data-filter=".magazines">Magazines</div>
+                </div>
+                <div id="category-filter">
+                    <ul class="category-list">
+                        <li class="category-item adults">
+                            <figure>
+                                <img src="images/category-filter/home-v2/category-filter-img-01.jpg" alt="New Releaase" />
+                                <figcaption class="bg-yellow">
+                                    <div class="diamond">
+                                        <i class="book"></i>
+                                    </div>
+                                    <div class="info-block">
+                                        <h4>The Great Gatsby</h4>
+                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
+                                        <span class="author"><strong>ISBN:</strong> 9781581573268</span>
+                                        <div class="rating">
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                        </div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
+                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="category-item kids-teens">
+                            <figure>
+                                <img src="images/category-filter/home-v2/category-filter-img-02.jpg" alt="New Releaase" />
+                                <figcaption class="bg-yellow">
+                                    <div class="diamond">
+                                        <i class="book"></i>
+                                    </div>
+                                    <div class="info-block">
+                                        <h4>The Great Gatsby</h4>
+                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
+                                        <span class="author"><strong>ISBN:</strong> 9781581573268</span>
+                                        <div class="rating">
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                        </div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
+                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="category-item video">
+                            <figure>
+                                <img src="images/category-filter/home-v2/category-filter-img-03.jpg" alt="New Releaase" />
+                                <figcaption class="bg-blue">
+                                    <div class="diamond">
+                                        <i class="dvd"></i>
+                                    </div>
+                                    <div class="info-block">
+                                        <h4>The Great Gatsby</h4>
+                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
+                                        <span class="author"><strong>ISBN:</strong> 9781581573268</span>
+                                        <div class="rating">
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                        </div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
+                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="category-item audio">
+                            <figure>
+                                <img src="images/category-filter/home-v2/category-filter-img-04.jpg" alt="New Releaase" />
+                                <figcaption class="bg-blue">
+                                    <div class="diamond">
+                                        <i class="dvd"></i>
+                                    </div>
+                                    <div class="info-block">
+                                        <h4>The Great Gatsby</h4>
+                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
+                                        <span class="author"><strong>ISBN:</strong> 9781581573268</span>
+                                        <div class="rating">
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                        </div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
+                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="category-item books">
+                            <figure>
+                                <img src="images/category-filter/home-v2/category-filter-img-05.jpg" alt="New Releaase" />
+                                <figcaption class="bg-green">
+                                    <div class="diamond">
+                                        <i class="eaudio"></i>
+                                    </div>
+                                    <div class="info-block">
+                                        <h4>The Great Gatsby</h4>
+                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
+                                        <span class="author"><strong>ISBN:</strong> 9781581573268</span>
+                                        <div class="rating">
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                        </div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
+                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="category-item magazines">
+                            <figure>
+                                <img src="images/category-filter/home-v2/category-filter-img-06.jpg" alt="New Releaase" />
+                                <figcaption class="bg-red">
+                                    <div class="diamond">
+                                        <i class="magazine"></i>
+                                    </div>
+                                    <div class="info-block">
+                                        <h4>The Great Gatsby</h4>
+                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
+                                        <span class="author"><strong>ISBN:</strong> 9781581573268</span>
+                                        <div class="rating">
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                        </div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
+                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="category-item adults">
+                            <figure>
+                                <img src="images/category-filter/home-v2/category-filter-img-07.jpg" alt="New Releaase" />
+                                <figcaption class="bg-red">
+                                    <div class="diamond">
+                                        <i class="magazine"></i>
+                                    </div>
+                                    <div class="info-block">
+                                        <h4>The Great Gatsby</h4>
+                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
+                                        <span class="author"><strong>ISBN:</strong> 9781581573268</span>
+                                        <div class="rating">
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                        </div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
+                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="category-item kids-teens">
+                            <figure>
+                                <img src="images/category-filter/home-v2/category-filter-img-08.jpg" alt="New Releaase" />
+                                <figcaption class="bg-light-green">
+                                    <div class="diamond">
+                                        <i class="ebook"></i>
+                                    </div>
+                                    <div class="info-block">
+                                        <h4>The Great Gatsby</h4>
+                                        <span class="author"><strong>Author:</strong> F. Scott Fitzgerald</span>
+                                        <span class="author"><strong>ISBN:</strong> 9781581573268</span>
+                                        <div class="rating">
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                            <span>☆</span>
+                                        </div>
+                                        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. Pellentesque dolor turpis, pulvinar varius.</p>
+                                        <a href="#">Read More <i class="fa fa-long-arrow-right"></i></a>
+                                        
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start: Category Filter -->
 
+    <!-- Start: Welcome Section -->
+    <section class="welcome-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="welcome-wrap">
+                        <div class="welcome-text">
+                            <h2 class="section-title">Welcome to the Uva Collage Online Library</h2>
+                            <span class="underline left"></span>
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humor, or randomized words which don't look even slightly believable. If you are going to use
+                                a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                                first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore
+                                always free from repetition, injected humor, or non-characteristic words etc.</p>
+                            <a class="btn btn-primary" href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="welcome-image">
+                        <img src="images/wellcome-image.jpg" class="algin-right" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Welcome Section -->
+
+    <!-- Start: Facts Counter -->
+    <div class="layout-v2-counter">
+        <div class="facts-counter">
+            <div class="container">
+                <div class="row">
+                    <ul>
+                        <li class="color-light-green">
+                            <div class="fact-item">
+                                <div class="fact-icon">
+                                    <i class="ebook"></i>
+                                </div>
+                                <span>Books<strong class="fact-counter">8000</strong></span>
+                            </div>
+                        </li>
+                        <li class="color-green">
+                            <div class="fact-item">
+                                <div class="fact-icon">
+                                    <i class="eaudio"></i>
+                                </div>
+                                <span>eAudio<strong class="fact-counter">850</strong></span>
+                            </div>
+                        </li>
+                        <li class="color-red">
+                            <div class="fact-item">
+                                <div class="fact-icon">
+                                    <i class="magazine"></i>
+                                </div>
+                                <span>Magazine<strong class="fact-counter">1000</strong></span>
+                            </div>
+                        </li>
+                        <li class="color-blue">
+                            <div class="fact-item">
+                                <div class="fact-icon">
+                                    <i class="videos"></i>
+                                </div>
+                                <span>DVDs<strong class="fact-counter">100</strong></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Facts Counter -->
+
+    <!-- Start: Meet Staff -->
+    <section class="team section-padding">
+        <div class="container">
+            <div class="center-content">
+                <h2 class="section-title">Meet Our Staff</h2>
+                <span class="underline center"></span>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="team-list">
+                <div class="team-member">
+                    <figure>
+                        <img src="images/team-img-01.jpg" alt="team" />
+                    </figure>
+                    <div class="content-block">
+                        <div class="member-info">
+                            <h4>David J. Seleb</h4>
+                            <span class="designation">Executive Director</span>
+                            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <figure>
+                        <img src="images/team-img-02.jpg" alt="team" />
+                    </figure>
+                    <div class="content-block">
+                        <div class="member-info">
+                            <h4>Robert Simmons</h4>
+                            <span class="designation">Deputy Director</span>
+                            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <figure>
+                        <img src="images/team-img-03.jpg" alt="team" />
+                    </figure>
+                    <div class="content-block">
+                        <div class="member-info">
+                            <h4>Anna Delpan</h4>
+                            <span class="designation">Librarian</span>
+                            <p>The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End: Meet Staff -->
+
+    <!-- Start: Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div id="footer-widgets">
+                <div class="row">
+                    <div class="col-md-2 widget-container">
+                        <div class="widget widget_social_icons">
+                            <ul>
+                                <li>
+                                    <a class="facebook" href="#" target="_blank">
+                                        <span>
+                                            <i class="fa-brands fa-facebook fa-flip" style="--fa-animation-duration: 3s;"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="google" href="#" target="_blank">
+                                        <span>
+                                                <i class="fa fa-google-plus fa-flip" style="--fa-animation-duration: 3s;"></i>
+                                            </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 widget-container">
+                        <div id="text-2" class="widget widget_text">
+                            <h3 class="footer-widget-title">About Uva Collage</h3>
+                            <span class="underline left"></span>
+                            <div class="textwidget">
+                                It is a long established fact that a reader will be distracted by the readable content of a page when looking.
+                            </div>
+                            <address>
+                                    <div class="info">
+                                        <i class="fa fa-location-arrow"></i>
+                                        <span>Mahiyangana Road, Badulla</span>
+                                    </div>
+                                    <div class="info">
+                                        <i class="fa fa-envelope"></i>
+                                        <span><a href="mailto:support@libraria.com">uvacollage@gmail.com</a></span>
+                                    </div>
+                                    <div class="info">
+                                        <i class="fa fa-phone"></i>
+                                        <span><a href="tel:012-345-6789">055 - 123 4567</a></span>
+                                    </div>
+                                </address>
+                        </div>
+                    </div>
+                    <div class="clearfix hidden-lg hidden-md hidden-xs tablet-margin-bottom"></div>
+                    <div class="col-md-2 col-sm-6 widget-container">
+                        <div id="text-4" class="widget widget_text">
+                            <h3 class="footer-widget-title">Timing</h3>
+                            <span class="underline left"></span>
+                            <div class="timming-text-widget">
+                                <time datetime="2017-02-13">Mon - Fri: 8 am - 1 pm</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-6 widget-container">
+                        <div id="text-4" class="widget widget_text">
+                            <h3 class="footer-widget-title">Map</h3>
+                            <span class="underline left"></span>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.154669776821!2d81.05501126475852!3d6.991056494949714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae462147255090f%3A0x23403425f6cdb8a1!2sUva%20College%2C%20Uva%20College%20Rd%2C%20Badulla%2090000!5e0!3m2!1sen!2slk!4v1650216523001!5m2!1sen!2slk" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-text col-md-3">
+                        <p><a target="_blank" href="#">Uva collage Badulla | Online Library</a></p>
+                    </div>
+                    <div class="col-md-9 pull-right">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End: Footer -->
 
 
     <!-- jQuery Latest Version 1.x -->
@@ -264,6 +821,7 @@
     <script src="js/bxslider.min.js"></script>
     <!-- Custom Scripts -->
     <script src="js/main.js"></script>
- 
+
+    <script src="https://kit.fontawesome.com/ff2d286ff7.js" crossorigin="anonymous"></script>
 </body>
 </html>
