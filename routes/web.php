@@ -31,5 +31,7 @@ Route::view('/damaged-Books','admin/pages/damagedBooks');
 Route::view('/issued-Books','admin/pages/issuedBooks');
 Route::view('/borrow-req-Books','admin/pages/borrowReq');
 Route::view('/addBook','admin/pages/addNewBook');
+Route::view('/books-gride','books-gride-view');
+
 
 
