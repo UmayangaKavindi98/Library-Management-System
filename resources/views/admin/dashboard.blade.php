@@ -34,6 +34,7 @@
     <div class="wrapper">
         {{-- include header  --}}
         @include('admin/header')
+        
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-success elevation-4" style=" background-image: linear-gradient(rgb(36, 36, 36), rgb(4, 0, 224));">
             <!-- School Logo -->
@@ -424,58 +425,9 @@
                     <!--3rd row-->
                     <div>
                         <!-- Calendar -->
-                        <div class="card bg-gradient-success">
-                            <div class="card-header border-0">
-            
-                                <h3 class="card-title">
-                                    <i class="far fa-calendar-alt"></i>
-                                    Time Table
-                                </h3>
-                                <!-- tools-->
-                                <div class="card-tools">
-                                    <button type="button" class="btn btn-success btn-sm" data-card-widget="collapse">
-                                        <i class="fas fa-minus"></i>
-                                    </button>
-                                    <button type="button" class="btn btn-success btn-sm" data-card-widget="remove">
-                                        <i class="fas fa-times"></i>
-                                    </button>
-                                </div>
-                                <!-- /tools -->
-                            </div>
-                            <!-- /card-header -->
-                            <div class="card-body pt-0"> 
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Time</th>
-                                            <th>Monday</th>
-                                            <th>Tuesday</th>
-                                            <th>Wednesday</th>
-                                            <th>Thursday</th>
-                                            <th>Friday</th>
-                                            <th>Edit</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach ($times as $item)
-                                        <tr>
-                                            <td>{{ $item->time }}</td>
-                                            <td>{{ $item->Monday }}</td>
-                                            <td>{{ $item->Tuesday }}</td>
-                                            <td>{{ $item->Wednesday }}</td>
-                                            <td>{{ $item->Thursday }}</td>
-                                            <td>{{ $item->Friday }}</td>
-                                            <td>
-                                                <a href="" class="btn btn-sm pl-3 pr-3" style="background-color:ivory;">Edit</a>
-                                            </td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
-                            <!-- /card-body -->
-                        </div>
-                        <!-- /calender card -->
+                        
+
+                        
 
                     </div><!-- / 3rd row-->
                     
