@@ -22,7 +22,7 @@
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
         {{-- include header  --}}
-        @include('admin/header')
+        @include('student/header')
 
         
          <!-- Main Sidebar Container -->
@@ -141,14 +141,14 @@
                                         <tr>
                                             <td>Book1</td>
                                             <td>Sithum Pathum</td>
-                                            <td>Mr. Kamal</td>
-                                            <td></td>
+                                            <td>17/01/2022</td>
+                                            <td>21/01/2022</td>
                                         </tr>
                                         <tr>
                                             <td>Book2</td>
                                             <td>Sithum Pathum</td>
-                                            <td>Mr. Kamal</td>
-                                            <td></td>
+                                            <td>17/01/2022</td>
+                                            <td>17/01/2022</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -175,7 +175,7 @@
         <!-- /.control-sidebar -->
 
         {{-- include footer  --}}
-        @include('admin/footer')
+        @include('student/footer')
     </div>
     <!-- ./wrapper -->
 

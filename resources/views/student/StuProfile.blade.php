@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 
 </head>
-<body class="hold-transition light-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition sidebar-mini">
     <div class="wrapper">
         @include('admin/header')
 
@@ -181,60 +181,64 @@
                                             //$dis="disabled"; 
                                             }
                                         ?>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">First Name</label>
-                                            <input type="email" class="form-control" id="exampleFName"  <?php echo $dis;?>>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Registration Number</label>
-                                            <input type="email" class="form-control" id="exampleRegNo" <?php echo $dis;?>>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Class</label>
-                                            <input type="email" class="form-control" id="exampleClass" <?php echo $dis;?>>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Date of Birth</label>
-                                            <input type="email" class="form-control" id="exampleDOB" <?php echo $dis;?>>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Telephone Number</label>
-                                            <input type="email" class="form-control" id="exampleTeleNo" <?php echo $dis;?>>
-                                        </div>
-                            
+                                            <form method="post" action="/saveuserdetails">
+                                            {{csrf_field()}}
+
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">First Name</label>
+                                                    <input type="email" class="form-control" id="exampleFName" name="user" <?php echo $dis;?>>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Registration Number</label>
+                                                    <input type="email" class="form-control" id="exampleRegNo" name="user" <?php echo $dis;?>>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Class</label>
+                                                    <input type="email" class="form-control" id="exampleClass" nname="user" <?php echo $dis;?>>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Date of Birth</label>
+                                                    <input type="email" class="form-control" id="exampleDOB" name="user" <?php echo $dis;?>>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="exampleInputEmail1">Telephone Number</label>
+                                                    <input type="email" class="form-control" id="exampleTeleNo" name="user" <?php echo $dis;?>>
+                                                </div>
+                                    
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Last Name</label>
+                                                        <input type="email" class="form-control" id="exampleLName" name="user" <?php echo $dis;?>>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Grade</label>
+                                                        <input type="email" class="form-control" id="exampleGrade" name="user" <?php echo $dis;?>>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Gender</label>
+                                                        <input type="email" class="form-control" id="exampleGender" name="user" <?php echo $dis;?>>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Address</label>
+                                                        <input type="email" class="form-control" id="exampleAdd" name="user" <?php echo $dis;?>>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="exampleInputEmail1">Email Address</label>
+                                                        <input type="email" class="form-control" id="exampleemail" name="user" <?php echo $dis;?>>
+                                                    </div>
+                                                    <form method="GET">
+                                                        <br>
+                                                        <input type="submit" class="btn btn-warning" value="Edit" name="edit" > 
+                                                        <input type="submit" class="btn btn-primary" value="Save" name="save">
+                                                    </form>
+                                                </div>
+                                            </form>
                                     </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Last Name</label>
-                                            <input type="email" class="form-control" id="exampleLName"  <?php echo $dis;?>>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Grade</label>
-                                            <input type="email" class="form-control" id="exampleGrade" <?php echo $dis;?>>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Gender</label>
-                                            <input type="email" class="form-control" id="exampleGender" <?php echo $dis;?>>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Address</label>
-                                            <input type="email" class="form-control" id="exampleAdd" <?php echo $dis;?>>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Email Address</label>
-                                            <input type="email" class="form-control" id="exampleemail" <?php echo $dis;?>>
-                                        </div>
-                                        <form method="GET">
-                                            <br>
-                                            <input type="submit" class="btn btn-warning" value="Edit" name="edit" > 
-                                            <input type="submit" class="btn btn-primary" value="Save" name="save">
-                                        </form>
-                                    </div>
-                                </div>
-                            </div> 
-                        </div>    
+                                </div> 
+                            </div>    
+                        </div>
                     </div>
-                </div>
             </div>
         </div><!--content-wrapper-->
 

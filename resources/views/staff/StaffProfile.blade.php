@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
 
 </head>
-<body class="hold-transition light-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
+<body class="hold-transition sidebar-mini">
     <div class="wrapper">
         @include('admin/header')
 

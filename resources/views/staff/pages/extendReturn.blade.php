@@ -22,7 +22,7 @@
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
         {{-- include header  --}}
-        @include('admin/header')
+        @include('staff/header')
 
         
          <!-- Main Sidebar Container -->
@@ -182,7 +182,7 @@
         <!-- /.control-sidebar -->
 
         {{-- include footer  --}}
-        @include('admin/footer')
+        @include('staff/footer')
     </div>
     <!-- ./wrapper -->
 

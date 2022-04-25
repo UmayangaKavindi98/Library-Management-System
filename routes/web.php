@@ -41,3 +41,5 @@ Route::view('/student','student/StuProfile');
 Route::view('/Stu-borrow-Detail','student/pages/StuborrowDetail');
 Route::view('/Stu-extend-Return','student/pages/StuextendReturn');
 Route::view('/Stu-fine-Details','student/pages/StufineDetails');
+
+

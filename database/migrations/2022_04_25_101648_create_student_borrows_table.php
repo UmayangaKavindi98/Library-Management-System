@@ -18,6 +18,7 @@ class CreateStudentBorrowsTable extends Migration
             $table->String('Book_Name', 200);
             $table->date('Borrow_Date');
             $table->date('Return_Date');
+            $table->date('New_Return_Date');
             $table->timestamps();
         });
     }
