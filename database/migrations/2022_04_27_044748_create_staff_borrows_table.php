@@ -14,10 +14,13 @@ class CreateStaffBorrowsTable extends Migration
     public function up()
     {
         Schema::create('staff_borrows', function (Blueprint $table) {
-            $table->id('Book_Id');
+            $table->char('Book_Id', 10)->primary();
+            $table->char('User_Id', 10);
+            $table->foreign('User_Id')->references('Staff_Id')->on('staffs');
             $table->String('Book_Name', 200);
             $table->date('Borrow_Date');
             $table->date('Return_Date');
+            $table->date('New_Return_Date');
             $table->timestamps();
         });
     }
